@@ -9,166 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="icon" href="img/logo.png">
     <link rel="stylesheet" href="src/output.css">
-
-    <style>
-        /* ================================
-           GLASS EFFECT
-           ================================ */
-        .glass {
-            background: rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            border-radius: 24px;
-        }
-
-        .glass-dark {
-            background: rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            border-radius: 20px;
-        }
-
-        /* ================================
-           REVIEW CARD
-           ================================ */
-        .review-card {
-            margin-top: 80px;
-            padding: 16px;
-            max-width: 400px;
-        }
-
-        .review-card__header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .review-card__avatar {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            object-fit: cover;
-            flex-shrink: 0;
-        }
-
-        .review-card__name {
-            color: white;
-            font-size: 14px;
-            font-weight: 600;
-        }
-
-        .review-card__stars {
-            color: #facc15;
-            font-size: 12px;
-            margin-top: 2px;
-        }
-
-        .review-card__text {
-            color: rgba(255, 255, 255, 0.6);
-            font-size: 12px;
-            margin-top: 12px;
-            line-height: 1.6;
-        }
-
-        /* ================================
-           PLANT CARD
-           ================================ */
-        .plant-card {
-            position: absolute;
-            top: 50%;
-            right: 80px;
-            transform: translateY(-50%);
-            z-index: 20;
-            padding: 20px;
-            width: 280px;
-        }
-
-        .plant-card__image-wrap {
-            width: 100%;
-            height: 220px;
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-
-        .plant-card__image-wrap img {
-            width: 200px;
-            height: auto;
-            object-fit: contain;
-        }
-
-        .plant-card__label {
-            color: rgba(255, 255, 255, 0.5);
-            font-size: 11px;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            margin-top: 16px;
-        }
-
-        .plant-card__row {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-top: 4px;
-        }
-
-        .plant-card__name {
-            color: white;
-            font-size: 18px;
-            font-weight: 700;
-        }
-
-        .plant-card__arrow {
-            color: rgba(255, 255, 255, 0.6);
-            font-size: 22px;
-            background: none;
-            border: none;
-            cursor: pointer;
-            line-height: 1;
-        }
-
-        .plant-card__arrow:hover {
-            color: white;
-        }
-
-        .plant-card__btn {
-            margin-top: 16px;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.15);
-            border: 1px solid rgba(255, 255, 255, 0.25);
-            color: white;
-            padding: 10px 0;
-            border-radius: 12px;
-            font-size: 14px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .plant-card__btn:hover {
-            background: rgba(255, 255, 255, 0.25);
-        }
-
-        .plant-card__dots {
-            display: flex;
-            justify-content: center;
-            gap: 8px;
-            margin-top: 16px;
-        }
-
-        .plant-card__dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-        }
-
-        .plant-card__dot--active { background: rgba(255, 255, 255, 0.8); }
-        .plant-card__dot--inactive { background: rgba(255, 255, 255, 0.3); }
-    </style>
 </head>
 
 <body class="bg-[#1B2316]">
@@ -185,7 +25,7 @@
         <div class="relative z-10">
 
             <!-- Navbar -->
-            <nav class="sticky top-0 px-6 py-8 z-10">
+            <nav class="sticky top-0 px-6 py-6 z-10">
                 <div class="flex items-center justify-between m-3">
 
                     <div class="w-40">
@@ -194,10 +34,10 @@
 
                     <div class="font-medium font-inter text-white bg-white/30 dark:bg-neutral-800/30 backdrop-blur-lg rounded-full">
                         <ul class="flex gap-[59px] font-medium font-inter pt-4 pb-4 pl-10 pr-10">
-                            <li><a href="#" class="hover:text-green-500 hover:scale-110 transition">Home</a></li>
-                            <li><a href="#" class="hover:text-green-500 hover:scale-110 transition">Plant Type</a></li>
-                            <li><a href="#" class="hover:text-green-500 hover:scale-110 transition">More</a></li>
-                            <li><a href="#" class="hover:text-green-500 hover:scale-110 transition">Contact</a></li>
+                            <li><a href="#" class="hover:text-green-500 hover:scale-120 transition">Home</a></li>
+                            <li><a href="#" class="hover:text-green-500 hover:scale-120 transition">Plant Type</a></li>
+                            <li><a href="#" class="hover:text-green-500 hover:scale-120 transition">More</a></li>
+                            <li><a href="#" class="hover:text-green-500 hover:scale-120 transition">Contact</a></li>
                         </ul>
                         
                     </div>
@@ -212,75 +52,60 @@
             </nav>
 
             <!-- Main -->
-            <main class="px-20 py-20 text-gray-200">
+            <main class="px-18 py-15 text-gray-200">
+                <div class="flex items-center justify-between">
+        
+                <div class="flex-1">
+                        <h1 class="text-8xl font-bold">Breath Natural</h1>
+                        <p class="max-w-md mt-4 text-gray-200">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolor.
+                        </p>
 
-                <h1 class="text-8xl font-bold">Breath Natureal</h1>
-                <p class="max-w-md mt-4 text-gray-200">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolor.
-                </p>
+                    <div class="flex items-center">
+                            <button class="mt-5 border border-white py-3 px-8 rounded-lg opacity-75 hover:bg-white hover:text-black hover:opacity-100 transition duration-300">
+                                <a href="#" class="uppercase tracking-widest text-sm">explore</a>
+                            </button>
 
-                <div class="flex">
-                    <button class="mt-5 border border-white py-3 px-8 rounded-[8px] opacity-75 hover:bg-white hover:text-black hover:opacity-100 transition duration-300">
-                        <a href="#" class="uppercase tracking-widest text-sm">explore</a>
-                    </button>
-
-                    <div class="flex ml-[35px] pt-5 opacity-50 hover:opacity-100 transition">
-                        <img src="img/demo.png" class="w-12 h-12">
-                        <h1 class="flex items-center ml-3">Live Demo...</h1>
-                    </div>
-                </div>
-
-                <!-- ================================
-                     REVIEW CARD — Glass Effect
-                     ================================ -->
-                <div class="glass-dark review-card">
-                    <div class="review-card__header">
-                        <img src="img/foto.jpeg" alt="alena Patel" class="review-card__avatar">
-                        <div>
-                            <p class="review-card__name">alena Patel</p>
-                            <div class="review-card__stars">★★★★★</div>
+                        <div class="flex ml-[35px] mt-5 opacity-50 hover:opacity-100 transition items-center">
+                            <img src="img/demo.png" class="w-12 h-12">
+                            <h1 class="ml-3">Live Demo...</h1>
                         </div>
                     </div>
-                    <p class="review-card__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt....
-                    </p>
                 </div>
 
+                <div class="w-64 h-auto border-2 bg-white/30 dark:bg-neutral-800/30 backdrop-blur-lg rounded-2xl border-white/10 p-4">
+                    <img src="img/tanaman.png" class="w-full h-auto mb-4 hover:scale-130 transition" alt="Plant">
+                    <h1 class="mt-5 text-center text-white font-bold text-xl">Plantea</h1>
+                    <p class="text-white/60 font-medium text-xs text-center mt-2 leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                </div>
             </main>
 
-        </div>
-
-        <!-- ================================
-             PLANT CARD — Glass Effect
-             (posisi absolute di kanan)
-             ================================ -->
-        <div class="glass plant-card">
-
-            <!-- Gambar tanaman -->
-            <div class="plant-card__image-wrap">
-                <img src="img/tanaman.png" alt="Calathea Plant">
-            </div>
-
-            <!-- Info -->
-            <p class="plant-card__label">Trendy House Plant</p>
-            <div class="plant-card__row">
-                <h2 class="plant-card__name">Calathea plant</h2>
-                <button class="plant-card__arrow">›</button>
-            </div>
-
-            <!-- Tombol Buy Now -->
-            <button class="plant-card__btn">Buy Now</button>
-
-            <!-- Dots indicator -->
-            <div class="plant-card__dots">
-                <span class="plant-card__dot plant-card__dot--active"></span>
-                <span class="plant-card__dot plant-card__dot--inactive"></span>
-                <span class="plant-card__dot plant-card__dot--inactive"></span>
-            </div>
+            <div class="ml-10 mt-5 flex items-center gap-4 bg-white/30 dark:bg-neutral-800/30 backdrop-blur-md border border-white/10 p-4 rounded-2xl w-fit">
+    <div class="flex -space-x-3">
+        <img class="w-10 h-10 rounded-full border-2 border-[#1B2316] object-cover" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100" alt="user">
+        <img class="w-10 h-10 rounded-full border-2 border-[#1B2316] object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100" alt="user">
+        <img class="w-10 h-10 rounded-full border-2 border-[#1B2316] object-cover" src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100" alt="user">
+        <div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-[#1B2316] bg-green-600 text-white text-xs font-bold">
+            +1K
         </div>
     </div>
+
+    <div>
+        <div class="flex items-center gap-1">
+            <span class="text-yellow-400 text-lg">★</span>
+            <span class="font-bold text-white">4.9</span>
+            <span class="text-white/60 text-sm">(1.2k Reviews)</span>
+        </div>
+        <p class="text-white/80 text-xs">Trusted by plant lovers worldwide</p>
+    </div>
+</div>
+
+        </div>      
+    </div>
+
 
 </body>
 </html>
