@@ -19,9 +19,9 @@
     <div style="background-image: url(img/background.webp);" class="bg-cover bg-no-repeat pb-10">
 
             <!-- Navbar -->
-            <nav class="sticky top-0 px-6 py-8 z-50 flex justify-center">
-                
-                <div class="flex items-center justify-between w-full max-w-[1400px] px-8 py-4 bg-white/10 dark:bg-neutral-800/20 backdrop-blur-xl rounded-full shadow-2xl">
+            <nav id="main-nav" class="fixed top-0 left-0 w-full px-6 py-8 z-50 flex justify-center transition-all duration-500">
+    
+                <div class="flex items-center justify-between w-full max-w-[1400px] px-8 py-4 transition-all duration-500 rounded-full" id="nav-content">
 
                     <div class="w-40">
                         <img src="img/logo teks.png" class="w-32 h-auto" alt="Logo Planto">
@@ -43,7 +43,6 @@
                     </div>
 
                 </div>
-
             </nav>
 
             <!-- Main -->
@@ -69,16 +68,16 @@
                     </div>
                 </div>
 
-                <div class="w-64 h-auto border-2 bg-white/30 dark:bg-neutral-800/30 backdrop-blur-lg rounded-4xl border-white/10 p-4">
-                    <img src="img/tanaman.webp" class="w-full h-auto mb-4 hover:scale-130 transition" alt="Plant">
-                    <h1 class="mt-5 text-center text-white font-bold text-xl">Plantea</h1>
-                    <p class="text-white/60 font-medium text-xs text-center mt-2 leading-relaxed">
+                <div class="mt-40 w-64 h-auto border-2 bg-white/30 dark:bg-neutral-800/30 backdrop-blur-lg rounded-4xl border-white/10 p-4">
+                    <img src="img/tanaman.webp" class="w-full h-auto mb-4 -mt-20 hover:scale-130 transition" alt="Plant">
+                    <h1 class="mt-8 text-center text-white font-bold text-xl">Plantea</h1>
+                    <p class="text-white/60 font-medium text-xs text-center mt-2 leading-relaxed mb-10">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     </p>
                 </div>
         </main>
 
-            <div class="ml-16 mt-5 flex items-center gap-4 bg-white/30 dark:bg-neutral-800/30 backdrop-blur-md border border-white/10 p-4 rounded-3xl w-fit">
+            <div class="ml-16 flex items-center gap-4 bg-white/30 dark:bg-neutral-800/30 backdrop-blur-md border border-white/10 p-4 rounded-3xl w-fit">
                 <div class="flex -space-x-3">
                     <img class="w-10 h-10 rounded-full border-2 border-[#1B2316] object-cover" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100" alt="user">
                     <img class="w-10 h-10 rounded-full border-2 border-[#1B2316] object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100" alt="user">
@@ -99,12 +98,14 @@
                 </div>
             </div>
             
-            <div class="flex justify-center">
-                <h1 class="text-white font-semibold text-5xl mt-30 mb-3">Our Trendy Plants</h1>
+            <div class="flex justify-center relative w-fit mx-auto mt-30 mb-3">
+                <img src="img/Vector 1.png" class="absolute -bottom-4 -left-8 w-12 h-12 rotate-180" alt="">
+                <h1 class="text-white font-semibold text-5xl">Our Trendy Plants</h1>
+                <img src="img/Vector 1.png" class="absolute -top-4 -right-8 w-12 h-12" alt="">
             </div>
 
         <div class="relative flex items-center justify-around mr-16 ml-16 mt-32 mb-10 bg-white/30 dark:bg-neutral-800/30 backdrop-blur-md border border-white/10 rounded-[80px] ">
-                <img class="relative z-10 w-lg -mt-40" src="img/tanaman 2.webp" alt="Plant">
+                <img class="relative z-10 w-lg -mt-40 hover:scale-110 transition" src="img/tanaman 2.webp" alt="Plant">
 
             <div class="ml-40">
                 <h1 class="text-white text-4xl font-bold max-w-xl">
@@ -118,22 +119,22 @@
                 </p>
 
                <div class="flex items-center mt-5"> 
-                <button class="border border-white py-3 px-8 rounded-lg opacity-75 hover:bg-white text-white hover:text-black hover:opacity-100 transition duration-300">
-                    <a href="#" class="uppercase tracking-widest text-sm font-medium">explore</a>
-                </button>
+                    <button class="border border-white py-3 px-8 rounded-lg opacity-75 hover:bg-white text-white hover:text-black hover:opacity-100 transition duration-300">
+                        <a href="#" class="uppercase tracking-widest text-sm font-medium">explore</a>
+                    </button>
 
-                <button class="ml-4 group border border-white py-3 px-3 rounded-lg opacity-75 hover:bg-white transition duration-300 flex items-center justify-center">
-                    <a href="#">
-                        <img class="group-hover:invert transition duration-300 w-6 h-6 object-contain" src="img/bag.png">
-                    </a>
-                </button>
+                    <button class="ml-4 group border border-white py-3 px-3 rounded-lg hover:bg-white transition duration-300 flex items-center justify-center">
+                        <a href="#">
+                            <img class="group-hover:invert transition duration-300 w-6 h-6 object-contain" src="img/bag.png">
+                        </a>
+                    </button>
     
                 </div>
             </div>
         </div>
 
-        <div class="relative flex flex-row-reverse items-center justify-around mr-16 ml-16 mt-32 mb-10 bg-white/30 dark:bg-neutral-800/30 backdrop-blur-md border border-white/10 rounded-[80px] p-0 overflow-visible">
-            <img class="relative z-10 w-lg -mt-40" src="img/tanaman 3.webp" alt="Plant">
+        <div class="relative flex flex-row-reverse items-center justify-around mr-16 ml-16 mt-32 mb-50 bg-white/30 dark:bg-neutral-800/30 backdrop-blur-md border border-white/10 rounded-[80px] p-0 overflow-visible">
+            <img class="relative z-10 w-lg -mt-40 hover:scale-110 transition" src="img/tanaman 3.webp" alt="Plant">
 
             <div class="pl-20 py-10">
                 <h1 class="text-white text-4xl font-bold max-w-xl">
@@ -163,8 +164,37 @@
 
     </div>
 
+    <div class="flex justify-center relative w-fit mx-auto mt-20 mb-10">
+        <img src="img/Vector 1.png" class="absolute -bottom-4 -left-8 w-12 h-12 rotate-180" alt="">
+        <h1 class="text-white font-semibold text-5xl">Our Trendy Plants</h1>
+        <img src="img/Vector 1.png" class="absolute -top-4 -right-8 w-12 h-12" alt="">
+    </div>
+
+    <div>
+        
+    </div>
+
     
 </div>
+
+<script>
+    const navContent = document.getElementById('nav-content');
+    const mainNav = document.getElementById('main-nav');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            // Efek saat di-scroll ke bawah
+            navContent.classList.add('backdrop-blur-xl', 'shadow-2xl');
+            mainNav.classList.remove('py-8');
+            mainNav.classList.add('py-4'); // Navbar sedikit mengecil saat scroll
+        } else {
+            // Efek saat kembali ke paling atas
+            navContent.classList.remove('backdrop-blur-xl', 'shadow-2xl');
+            mainNav.classList.add('py-8');
+            mainNav.classList.remove('py-4');
+        }
+    });
+</script>
 
 
 </body>
